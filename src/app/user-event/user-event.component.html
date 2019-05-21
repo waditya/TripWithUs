@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TripWithUs! - Destination</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+
+<body>
+  <!-- Navigation bar html code  -->
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand"><img src="/assets/images/sheero.png" alt="sheero_logo" class="sheero"/></a>
+        <span class="navbar-text mx-auto">TripWithUs!</span>
+
+        <button class="navbar-toggler ml-auto navbar-light bg-light" data-toggle="collapse" data-target="#collapse_target">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse_target">
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="aboutus">About Us</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="signup">Sign Up</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="login">Logout</a>
+            </li>
+
+        </ul>
+        </div>
+    </nav>
+
+  <!-- List of Destinations html code  -->
+       <div class="container">
+        <h1>List of Events</h1>
+
+  <!-- Image Grids along with Bootstrap html code  -->
+     <div class="portfolio-items">
+      <div  class="row dest-format">
+      <div class="col-md-4 col-sm-6 col-12 d-flex align-items-stretch mb-5" style="color: #555;" *ngFor="let book of books">
+          <div class="card-body">
+          <img bind-src="book.image" style="width:300px; height:200px" alt="image of added destination" class="img-fluid"/>
+          <h3 class="card-title mt-2">{{ book.name }}</h3>
+          <h5 class="card-subtitle mt-2">Location: {{ book.location }}</h5>
+          </div>
+          <br>
+      </div>
+      </div>
+    </div>
+
+    </div>
+
+ <!--Bootstrap4 JS files -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+

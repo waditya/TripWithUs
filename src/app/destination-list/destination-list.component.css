@@ -1,0 +1,61 @@
+
+/*************** navigation style ***********************/
+.nav-link {
+  font-size: 2em;
+  font-family: 'Lato', 'sans-serif';
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+nav .navbar-nav li {
+  margin-left: 25px;
+  }
+
+nav .navbar-nav li a{
+color: #000 !important;
+}
+
+.navbar .navbar-text {
+  color: black!important;
+  font-weight: bold;
+  font-size: 2.4em;
+}
+
+.sheero {
+  height: 60px;
+  width: auto;
+}
+
+.dest-format {
+  margin: 10px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.card-body {
+  border: 1px solid #0000ff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  font-size: 1.5em;
+  background-color: transparent;
+}
+
+h1 {
+margin: 1.5em 0;
+}
+
+
+
+

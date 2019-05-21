@@ -1,0 +1,54 @@
+/*************** navigation style ***********************/
+.nav-link {
+  font-size: 2em;
+  font-family: 'Lato', 'sans-serif';
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+nav .navbar-nav li {
+  margin-left: 25px;
+  }
+
+nav .navbar-nav li a{
+color: #000 !important;
+}
+
+.navbar .navbar-text {
+  color: black!important;
+  font-weight: bold;
+  font-size: 2.4em;
+}
+
+.sheero {
+  height: 60px;
+  width: auto;
+}
+
+.card-body {
+  text-align: center;
+}
+
+/** Basic body setup **/
+
+body {
+background-image: url("/assets/images/aboutus.jpg");
+background-size: cover;
+background-position: center;
+text-rendering: optimizeLegibility;
+overflow-x: hidden;                  /* to avoid horizontal scroll bar */
+}
+
+.headline h1 {
+color: #555;
+font-size: 3.5em;
+}
+
+.headline p {
+padding: 2.5% 0;
+font-size: 1.5em;
+}
+
+.square-grid h3{
+color: #555;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>TripWithUs!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Fontawesome -- Fa icons -- CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+  </head>
+
+<body>
+  <!-- Navigation -->
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand"><img src="/assets/images/sheero.png" alt="sheero_logo" class="sheero"/></a>
+        <span class="navbar-text mx-auto">TripWithUs!</span>
+
+        <button class="navbar-toggler ml-auto navbar-light bg-light" data-toggle="collapse" data-target="#collapse_target">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse_target">
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="aboutus">About Us</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="signup">Sign Up</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="login">Login</a>
+            </li>
+
+        </ul>
+        </div>
+    </nav>
+
+
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Login Here</h3>
+			</div>
+			<div class="card-body"> <!---Card container for input elements - Email and Pasword and Submit button -->
+				  <!---Form component in HTML, CSS3 with submit event listner on it--->
+          <form class="form-signin" (ngSubmit)="login()" #loginForm="ngForm">
+					<div class="input-group form-group"> <!--Division consisting of form-control elements-->
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<!--Input for email address with bindings to backend for transaction-->
+            <input type="email" class="form-control" placeholder="Email address" [(ngModel)]="loginData.email" name="email" required/>
+
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						 <!--Input for password with bindings to backend for transaction-->
+						<input type="password" class="form-control" placeholder="Password" [(ngModel)]="loginData.password" name="password" required/>
+					</div>
+          <!--Submit button element of form compnent to trigger event to the event listener-->
+					<div class="form-group form-button">
+                        <button type="submit" value="Login" class="btn login_btn">Login</button>
+					</div>
+					  <!--Error Message Dispalyed-->
+							<div class = "alert-box">
+									<p class="alert-message">{{data}}</p>
+							</div>
+
+				</form>
+			</div>
+			<div class="card-footer">
+				<div class="d-flex justify-content-center links">
+					Don't have an account?<a href="#">Sign Up</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!--Bootstrap4 JS files -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

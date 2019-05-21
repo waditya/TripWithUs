@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+/************* navigation ********************/
+
+html, body {
+
+    font-family: "Lato", sans-serif;
+
+}
+
+.nav-link {
+    font-size: 1.4em;
+    font-family: 'Lato', 'sans-serif';
+    cursor: pointer;
+    margin-left: 35px;
+    /*color: #555454; */
+}
+
+nav .navbar-nav li a{
+  color: #000 !important;
+  }
+
+.navbar .navbar-text {
+    color: black!important;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.sheero {
+    height: 60px;
+    width: auto;
+}
+
+section {
+    padding: 5%;
+}
+
+.map {
+    overflow: hidden;
+    box-shadow: 5px 10px 25px #555;
+    margin-top: 8%;
+}
+
+.headline h1,
+.headline h3 {
+    color: #555;
+}
+
+.headline h3 {
+    font-style: italic;
+}
+
+.headline p {
+    padding: 2.5% 0;
+}
+
+.square-grid h4{
+    color: #555;
+}
+

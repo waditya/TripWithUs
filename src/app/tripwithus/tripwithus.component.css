@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+body , html {
+	height: 100%;
+	margin: 0;
+	font-style: 16px;
+	font-family: 'Lato', 'sans-serif';
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+
+}
+
+/*************** navigation style ***********************/
+.nav-link {
+  font-size: 2em;
+  font-family: 'Lato', 'sans-serif';
+  cursor: pointer;
+  margin-left: 25px;
+  color: #fff;
+}
+
+nav .navbar-nav li {
+  margin-left: 25px;
+  }
+
+nav .navbar-nav li a{
+color: #fff !important;
+}
+
+.navbar .navbar-text {
+  color: white!important;
+  font-weight: bold;
+  font-size: 2.4em;
+}
+
+.sheero {
+  height: 60px;
+  width: auto;
+}
+
+
+
+.title{
+  background-size:100% 100%;
+  background-color: transparent;
+  border: none;
+  background: none;
+  font-weight: bolder;
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 60px;
+  width: 100px;
+}
+
+
+ .content-para {
+				font-size: 1.8em;
+				line-height: 1.4em;
+        word-spacing: 3px;
+        text-align: left;
+    }
+
+.section-dark h2{
+	padding-bottom: 4%;
+}
+
+.sheero-home {
+    display: none;
+}
+
+
+
+
+.pimg1,.pimg2,.pimg3{
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	max-width: 100%;
+}
+
+.pimg1{
+	background-image: url('newyork.jpg');
+	min-height: 600px;
+}
+
+.pimg2{
+	background-image: url('niagara.jpg');
+	min-height: 400px;
+}
+
+.pimg3{
+	background-image: url('cali.png');
+	min-height: 400px;
+}
+
+
+.section{
+	text-align: center;
+	padding: 50px 80px;
+}
+
+.section-light{
+	background-color: #f4f4f4;
+	color: #666;
+}
+
+.section-dark{
+	background-color: #282e34;
+	color: #ddd;
+}
+
+.section-dark-footer{
+	background-color: #282e34;
+	color: #ddd;
+    padding: 10px;
+}
+
+.footer-part {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+
+.ptext{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 27px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+
+.ptext .border{
+	background : #111;
+	color: #fff;
+	padding: 20px;
+}
+
+
+.fa {
+  padding: 40px;
+  font-size: 15px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.explore-para{
+	text-align: center;
+	padding-top: 5%;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+
+
+
+/* Portfolio Section */
+#portfolio {
+	padding: 50px 0px 10px 0px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#54d0dd+0,54d0dd+0,54d0dd+0,71777d+0,414a52+100 */
+	background: rgb(84,208,221); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(113,119,125,1) 0%, rgba(65,74,82,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(113,119,125,1) 0%, rgba(65,74,82,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(113,119,125,1) 0%, rgba(65,74,82,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54d0dd', endColorstr='#414a52', GradientType=0 ); /* IE6-9 */
+}
+#portfolio h2 {
+	color: #54d0dd;
+}
+.categories {
+	padding-bottom: 35px;
+	text-align: center;
+}
+ul.cat li {
+	display: inline-block;
+}
+ol.type li {
+	display: inline-block;
+	margin-left: 20px;
+}
+ol.type li a {
+	background: #414a52;
+	color: #54d0dd;
+	padding: 12px 24px;
+	text-transform: uppercase;
+}
+ol.type li a.active {
+	background: #54d0dd;
+	color: #414a52;
+}
+ol.type li a:hover {
+	background: #54d0dd;
+	color: #414a52;
+}
+.isotope-item {
+	z-index: 2
+}
+.isotope-hidden.isotope-item {
+	z-index: 1
+}
+.isotope, .isotope .isotope-item {
+	/* change duration value to whatever you like */
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+.isotope-item {
+	margin-right: -1px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.isotope {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	transition-property: height, width;
+}
+.isotope .isotope-item {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property: -moz-transform, opacity;
+	transition-property: transform, opacity;
+}
+.portfolio-item {
+	margin: 15px 0;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+.portfolio-item:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.portfolio-item .hover-bg {
+	height: 195px;
+	overflow: hidden;
+	position: relative;
+}
+.hover-bg .hover-text {
+	position: absolute;
+	text-align: center;
+	margin: 0 auto;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.66);
+	padding: 30% 0 0 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.hover-bg .hover-text>h4 {
+	text-transform: uppercase;
+	opacity: 0;
+	color: #fff;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	transition: all 0.3s;
+}
+.hover-bg:hover .hover-text>h4 {
+	opacity: 1;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+.hover-bg .hover-text>i {
+	opacity: 0;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	transition: all 0.3s;
+}
+.hover-bg:hover .hover-text>i {
+	opacity: 1;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+}
+.hover-bg:hover .hover-text {
+	opacity: 1;
+}
+#portfolio i.fa {
+	font-size: 20px;
+	padding: 5px;
+	color: #E87E04;
+}
+
+/*
+ * Nivo Lightbox Default Theme v1.0
+ * http://dev7studios.com/nivo-lightbox
+ *
+ * Copyright 2013, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+ .nivo-lightbox-theme-default * {
+  -webkit-box-sizing: initial !important;
+  -moz-box-sizing: initial !important;
+  box-sizing: initial !important;
+}
+.nivo-lightbox-theme-default.nivo-lightbox-overlay {
+background: #666;
+background: rgba(0,0,0,0.6);
+}
+.nivo-lightbox-theme-default .nivo-lightbox-content.nivo-lightbox-loading { background: url(loading.gif) no-repeat 50% 50%; }
+
+.nivo-lightbox-theme-default .nivo-lightbox-nav {
+top: 10%;
+width: 8%;
+height: 80%;
+text-indent: -9999px;
+background-repeat: no-repeat;
+background-position: 50% 50%;
+opacity: 0.5;
+}
+.nivo-lightbox-theme-default .nivo-lightbox-nav:hover {
+opacity: 1;
+background-color: transparent;
+}
+.nivo-lightbox-theme-default .nivo-lightbox-prev {
+background-image: url(prev.png);
+border-radius: 0 3px 3px 0;
+}
+.nivo-lightbox-theme-default .nivo-lightbox-next {
+background-image: url(next.png);
+border-radius: 3px 0 0 3px;
+}
+
+.nivo-lightbox-theme-default .nivo-lightbox-close {
+display: block;
+background: url(close.png) no-repeat 5px 5px;
+width: 16px;
+height: 16px;
+text-indent: -9999px;
+padding: 5px;
+opacity: 0.5;
+}
+.nivo-lightbox-theme-default .nivo-lightbox-close:hover { opacity: 1; }
+
+.nivo-lightbox-theme-default .nivo-lightbox-title-wrap { bottom: -7%; }
+.nivo-lightbox-theme-default .nivo-lightbox-title {
+font: 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+background: #000;
+color: #fff;
+padding: 7px 15px;
+border-radius: 30px;
+}
+
+.nivo-lightbox-theme-default .nivo-lightbox-image img {
+background: #fff;
+-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+   -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+        box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+}
+.nivo-lightbox-theme-default .nivo-lightbox-ajax,
+.nivo-lightbox-theme-default .nivo-lightbox-inline {
+background: #fff;
+padding: 40px;
+-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+   -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+        box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.3),
+     (-o-min-device-pixel-ratio: 2.6/2),
+     (min--moz-device-pixel-ratio: 1.3),
+     (min-device-pixel-ratio: 1.3),
+     (min-resolution: 1.3dppx) {
+
+.nivo-lightbox-theme-default .nivo-lightbox-content.nivo-lightbox-loading {
+  background-image: url(loading@2x.gif);
+  background-size: 32px 32px;
+}
+.nivo-lightbox-theme-default .nivo-lightbox-prev {
+  background-image: url(prev@2x.png);
+  background-size: 48px 48px;
+}
+.nivo-lightbox-theme-default .nivo-lightbox-next {
+  background-image: url(next@2x.png);
+  background-size: 48px 48px;
+}
+.nivo-lightbox-theme-default .nivo-lightbox-close {
+  background-image: url(close@2x.png);
+  background-size: 16px 16px;
+}
+
+}
+/*
+ * Nivo Lightbox v1.2.0
+ * http://dev7studios.com/nivo-lightbox
+ *
+ * Copyright 2013, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+ .nivo-lightbox-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99998;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.nivo-lightbox-overlay.nivo-lightbox-open {
+	visibility: visible;
+	opacity: 1;
+}
+.nivo-lightbox-wrap  {
+	position: absolute;
+	top: 10%;
+	bottom: 10%;
+	left: 10%;
+	right: 10%;
+}
+.nivo-lightbox-content {
+	width: 100%;
+	height: 100%;
+}
+.nivo-lightbox-title-wrap {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99999;
+	text-align: center;
+}
+.nivo-lightbox-nav { display: none; }
+.nivo-lightbox-prev {
+	position: absolute;
+	top: 50%;
+	left: 0;
+}
+.nivo-lightbox-next {
+	position: absolute;
+	top: 50%;
+	right: 0;
+}
+.nivo-lightbox-close {
+	position: absolute;
+	top: 2%;
+	right: 2%;
+}
+
+.nivo-lightbox-image { text-align: center; }
+.nivo-lightbox-image img {
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+	vertical-align: middle;
+}
+.nivo-lightbox-content iframe {
+	width: 100%;
+	height: 100%;
+}
+.nivo-lightbox-inline,
+.nivo-lightbox-ajax {
+	max-height: 100%;
+	overflow: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/* https://bugzilla.mozilla.org/show_bug.cgi?id=308801 */
+}
+.nivo-lightbox-error {
+	display: table;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	text-shadow: 0 1px 1px #000;
+}
+.nivo-lightbox-error p {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* Effects
+ **********************************************/
+.nivo-lightbox-notouch .nivo-lightbox-effect-fade,
+.nivo-lightbox-notouch .nivo-lightbox-effect-fadeScale,
+.nivo-lightbox-notouch .nivo-lightbox-effect-slideLeft,
+.nivo-lightbox-notouch .nivo-lightbox-effect-slideRight,
+.nivo-lightbox-notouch .nivo-lightbox-effect-slideUp,
+.nivo-lightbox-notouch .nivo-lightbox-effect-slideDown,
+.nivo-lightbox-notouch .nivo-lightbox-effect-fall {
+	-webkit-transition: all 0.2s ease-in-out;
+	   -moz-transition: all 0.2s ease-in-out;
+	    -ms-transition: all 0.2s ease-in-out;
+	     -o-transition: all 0.2s ease-in-out;
+	        transition: all 0.2s ease-in-out;
+}
+
+/* fadeScale */
+.nivo-lightbox-effect-fadeScale .nivo-lightbox-wrap {
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	    -ms-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	-webkit-transform: scale(0.7);
+	   -moz-transform: scale(0.7);
+	    -ms-transform: scale(0.7);
+	        transform: scale(0.7);
+}
+.nivo-lightbox-effect-fadeScale.nivo-lightbox-open .nivo-lightbox-wrap {
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
+}
+
+/* slideLeft / slideRight / slideUp / slideDown */
+.nivo-lightbox-effect-slideLeft .nivo-lightbox-wrap,
+.nivo-lightbox-effect-slideRight .nivo-lightbox-wrap,
+.nivo-lightbox-effect-slideUp .nivo-lightbox-wrap,
+.nivo-lightbox-effect-slideDown .nivo-lightbox-wrap {
+	-webkit-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+	   -moz-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+	    -ms-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+	     -o-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+	        transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+.nivo-lightbox-effect-slideLeft .nivo-lightbox-wrap {
+	-webkit-transform: translateX(-10%);
+	   -moz-transform: translateX(-10%);
+	    -ms-transform: translateX(-10%);
+	        transform: translateX(-10%);
+}
+.nivo-lightbox-effect-slideRight .nivo-lightbox-wrap {
+	-webkit-transform: translateX(10%);
+	   -moz-transform: translateX(10%);
+	    -ms-transform: translateX(10%);
+	        transform: translateX(10%);
+}
+.nivo-lightbox-effect-slideLeft.nivo-lightbox-open .nivo-lightbox-wrap,
+.nivo-lightbox-effect-slideRight.nivo-lightbox-open .nivo-lightbox-wrap {
+	-webkit-transform: translateX(0);
+	   -moz-transform: translateX(0);
+	    -ms-transform: translateX(0);
+	        transform: translateX(0);
+}
+.nivo-lightbox-effect-slideDown .nivo-lightbox-wrap {
+	-webkit-transform: translateY(-10%);
+	   -moz-transform: translateY(-10%);
+	    -ms-transform: translateY(-10%);
+	        transform: translateY(-10%);
+}
+.nivo-lightbox-effect-slideUp .nivo-lightbox-wrap {
+	-webkit-transform: translateY(10%);
+	   -moz-transform: translateY(10%);
+	    -ms-transform: translateY(10%);
+	        transform: translateY(10%);
+}
+.nivo-lightbox-effect-slideUp.nivo-lightbox-open .nivo-lightbox-wrap,
+.nivo-lightbox-effect-slideDown.nivo-lightbox-open .nivo-lightbox-wrap {
+	-webkit-transform: translateY(0);
+	   -moz-transform: translateY(0);
+	    -ms-transform: translateY(0);
+	        transform: translateY(0);
+}
+
+/* fall */
+.nivo-lightbox-body-effect-fall .nivo-lightbox-effect-fall {
+	-webkit-perspective: 1000px;
+	   -moz-perspective: 1000px;
+	        perspective: 1000px;
+}
+.nivo-lightbox-effect-fall .nivo-lightbox-wrap {
+	-webkit-transition: all 0.3s ease-out;
+	   -moz-transition: all 0.3s ease-out;
+	    -ms-transition: all 0.3s ease-out;
+	     -o-transition: all 0.3s ease-out;
+	        transition: all 0.3s ease-out;
+	-webkit-transform: translateZ(300px);
+	   -moz-transform: translateZ(300px);
+	    -ms-transform: translateZ(300px);
+	        transform: translateZ(300px);
+}
+.nivo-lightbox-effect-fall.nivo-lightbox-open .nivo-lightbox-wrap {
+	-webkit-transform: translateZ(0);
+	   -moz-transform: translateZ(0);
+	    -ms-transform: translateZ(0);
+	        transform: translateZ(0);
+}
+/************* Carousel destinations ***********/
+.carousel-inner img {
+  margin: auto;
+}
+.carousel-inner {
+	padding-top: 5%;
+}
+
+.square-grid h4{
+	color: #555;
+}
+
+/***************************** Media Queries ***********************************************/
+
+@media only screen and (max-width: 768px) {
+
+	.section{
+		text-align: center;
+		padding: 50px 5px;
+	}
+
+	.explore-para{
+		text-align: center;
+		padding-top: 10%;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+.pimg1 .ptext .border {
+    display: block;
+    letter-spacing: normal;
+    line-height: 160%;
+    word-spacing: 2px;
+    vertical-align: middle;
+}
+
+.pimg3 .ptext .border {
+    display: block;
+    letter-spacing: normal;
+    line-height: 160%;
+    word-spacing: 2px;
+    vertical-align: middle;
+}
+
+.pimg2 .ptext .border h2 {
+
+
+    letter-spacing: normal;
+    line-height: 140%;
+    word-spacing: 2px;
+    vertical-align: middle;
+    padding: -2%;
+    }
+
+.pimg3 {
+        min-height: 450px;
+    }
+
+
+.section-light {
+	background-color: #f4f4f4;
+	color: #666;
+
+}
+
+.section-dark h2 {
+	line-height: 160%;
+    padding-bottom: 5px;
+
+
+}
+
+
+
+#portfolio {
+				padding: 10px 10px;
+    }
+
+		.content-para{
+		font-size: 1.8em;
+    line-height: 1.4em;
+    word-spacing: 3px;
+    padding: 10px 0px 0px;
+    text-align: left;
+	}
+.hover-bg .hover-text {
+    display: none;
+}
+
+.btn {
+  display: none;
+}
+
+.title {
+        display: none;
+    }
+
+		nav .navbar-nav li {
+			padding-top: 2%;
+			}
+
+		.sheero {
+				height: 45px;
+				width: auto;
+			}
+
+/************* Carousel destinations ***********/
+.carousel-inner img {
+  max-width: 100%;
+}
+
+.carousel-inner {
+	padding-top: 3%;
+}
+
+}

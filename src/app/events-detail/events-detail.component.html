@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>{{ events.name }}</h1>
+    <dl class="list">
+      <dt>Event ID</dt>
+      <dd>{{ events.id }}</dd>
+      <dt>Event Type</dt>
+      <dd>{{ events.type }}</dd>
+      <dt>Events Location</dt>
+      <dd>{{ events.location }}</dd>
+      <dt>Dates</dt>
+      <dd>{{ events.date }}</dd>
+      <dt>Images</dt>
+      <dd>{{ events.image | date:'short' }}</dd>
+    </dl>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <a [routerLink]="['/book-edit', events._id]" class="btn btn-success">EDIT</a>
+      <button class="btn btn-danger" type="button" (click)="deleteBook(events._id)">DELETE</button>
+    </div>
+  </div>

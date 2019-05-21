@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet"> <!--including Google fonts Lato for our website-->
+
+
+
+
+  <!-- Bootstrap Files for Header section alone -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/webform.component.css" type="text/css">
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand"><img src="/assets/images/sheero.PNG" alt="sheero_logo" class="sheero"/></a>
+        <span class="navbar-text mx-auto">TripWithUs!</span>
+
+        <button class="navbar-toggler ml-auto navbar-light bg-light" data-toggle="collapse" data-target="#collapse_target">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse_target">
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="aboutus">About Us</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="signup">Sign Up</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="login">Login</a>
+            </li>
+
+        </ul>
+        </div>
+    </nav>
+
+
+    <section class="add-events">
+                <div class="add-form-container">
+                <div class="row">
+                    <h2 style="color:#555454;">Add Events</h2>
+                </div>
+
+
+                    <form method="post" action="#" class="add-form">
+                        <!---- Event_ID row ----------->
+
+
+                                <label for="event-id">Event ID</label>
+
+
+                                <input type="text" name="event-id" id="event-id" placeholder="enter event ID" required>
+
+                        <!------- Event Name row --------->
+
+
+                        <label for="event-name">Event Name</label>
+
+                        <input type="text" name="event-name" id="event-name" placeholder="enter event name" required>
+
+
+                        <!------- Event location row --------->
+
+
+                        <label for="event-location">Event Location</label>
+
+
+                        <input type="text" name="event-location" id="event-location" placeholder="enter location" required>
+
+                        <!------- Event Zip code row --------->
+
+
+                        <label for="event-zipcode">Zipcode</label>
+
+
+                        <input type="number" name="event-zipcode" id="event-zipcode" placeholder="enter zipcode" required>
+
+
+                        <!------- Event Date row --------->
+
+                                <label for="event-date">Event Date</label>
+
+                                <input type="date" name="event-date" id="event-date" required>
+
+                        <!----------- Event Description row ------------->
+
+                                <label>Event Description</label>
+
+                                <textarea name="message" rows="5" cols="30"></textarea>
+
+                        <!----------- Submit button row ------------->
+
+                                <label>&nbsp;</label>
+
+
+                                <div class="submit-button">
+                                    <input type="submit" value="Submit">
+                                </div>
+
+                    </form>
+
+
+                    </div>
+
+
+        <!----------------------------------  Mobile Form ------------------------------------------- -->
+            <div class="add-form-container-mobile">
+                <div class="row">
+                    <h2 style="color:#fff;">Add Events</h2>
+                </div>
+                <!------- Customer name row --------->
+                <div class="row">
+                    <form method="post" action="#" class="add-form-mobile">
+                       <!---- Event_ID row ----------->
+
+
+                                <label for="event-id">Event ID</label>
+
+
+                                <input type="text" name="event-id" id="event-id" placeholder="enter event ID" required>
+
+                         <!------- Event Name row --------->
+
+
+                        <label for="event-name">Event Name</label>
+
+                        <input type="text" name="event-name" id="event-name" placeholder="enter event name" required>
+
+                       <!------- Event location row --------->
+
+
+                        <label for="event-location">Event Location</label>
+
+
+                        <input type="text" name="event-location" id="event-location" placeholder="enter location" required>
+
+                       <!------- Event Zip code row --------->
+
+
+                        <label for="event-zipcode">Zipcode</label>
+
+
+                        <input type="number" name="event-zipcode" id="event-zipcode" placeholder="enter zipcode" required>
+
+
+                        <!------- Event Date row --------->
+
+                                <label for="event-date">Event Date</label>
+
+                                <input type="date" name="event-date" id="event-date" required>
+
+                        <!----------- Event Description row ------------->
+
+                                <label>Event Description</label>
+
+                                <textarea name="message" rows="5" cols="30"></textarea>
+
+                        <!----------- Submit button row ------------->
+
+
+                                    <label>&nbsp;</label>
+
+                                <div class="submit-button">
+                                    <input type="submit" value="Submit">
+                                </div>
+                    </form>
+
+                </div>
+                    </div>
+
+            </section>
+
+      <!------------------------------------------------------------------------------------------------------------------------->
+      <!--Bootstrap4 JS files -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

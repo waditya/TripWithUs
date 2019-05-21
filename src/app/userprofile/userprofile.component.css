@@ -1,0 +1,5 @@
+.container{
+  background-image: url("torres.jpg");
+  background-size: cover;
+  height: 900px;
+}

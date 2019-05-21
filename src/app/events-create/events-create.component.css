@@ -1,0 +1,239 @@
+/* .container1{
+
+
+	background-color: red;
+
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	margin: auto;
+}
+ */
+
+
+ nav-link {
+  font-size: 2em;
+  font-family: 'Lato', 'sans-serif';
+  cursor: pointer;
+  margin-left: 25px;
+  color: #fff;
+}
+
+nav .navbar-nav li {
+  margin-left: 25px;
+  }
+
+nav .navbar-nav li a{
+color: #fff !important;
+}
+
+.navbar .navbar-text {
+  color: white!important;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.sheero {
+  height: 60px;
+  width: auto;
+}
+
+/************ Basic Setup *******/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.full-event {
+
+  background-image: url("/assets/images/webform_wallpaper.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;                           /********* height = 100% of viewport *****/
+  background-color: #fff;
+  color: #555454;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;                        /******** Base Line font-size 1.5em **********/
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+
+}
+
+.clearfix {zoom: 1} /*using to clear float anomalies */
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/******** Reusable - Base components ***********/
+
+.row {
+  max-height: 1140px;                     /******** Base Line Height 1140px **********/
+  margin: 0 auto 0 auto;
+}
+
+section {
+  padding: 90px 0;                        /********* Base line padding 90px ********/
+}
+
+/********** Heading ***********/
+
+h2.event-h2 {
+  font-weight: bold;
+  font-size: 2em;
+  word-spacing: 2%;          /* expressed in %age of body font size: target/context = 3em/1.5em = 2% */
+  margin-bottom: 2%;                                            /* target/context = 1.8px/90px = 2% */
+  margin-left: 20%;   /* 960px is row width (context) ,so Target/Context = 192px/960px = 20% */
+  padding-top: 2%;                                              /* target/context = 1.8px/90px = 2% */
+  letter-spacing: 1%;
+}
+
+
+/************* Add events Form ********************/
+.add-form-container {
+  width: 50%;          /* Here context is section of width 900px, so target/context = 450px/900px = 50% */
+  height: auto;
+  margin: 0 auto;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 5% 0;       /* target/context = 4.5px/90px = 5% */
+  border: 1px solid #555454;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+label {
+      display: block;
+      color: #555454;
+      margin-bottom: 1em;
+      font-weight: 400;
+      font-size: 1.4em;
+  }
+
+.add-form {
+  padding-top: 3%;        /* target/context = 2.7px/90px = 3% */
+  width: 60%;            /* context is row of width 960px, target/context = 576px/960px = 60% */
+  margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;          /* width of form input = 100% to match with its context - .add-form-container*/
+  padding: 2%;         /* target/context = 1.8px/90px = 2% */
+  margin-bottom: 8%;    /* target/context = 7.2px/90px = 8% */
+  border-radius: 3%;    /* to make rounded corners */
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100%;
+}
+
+
+
+/************ Submit button *********************/
+
+input[type=date],
+input[type=file]{
+  width: 100%;    /* width of form input = 100% to match with its context - .add-form-container*/
+  padding: 2%;    /* target/context = 1.8px/90px = 2% */
+  margin-bottom: 8%; /* target/context = 7.2px/90px = 8% */
+  border-radius: 3%; /* to make rounded corners */
+  border: 1px solid #ccc;
+}
+
+
+textarea {
+  height: 20%;
+}
+
+.add-form-container-mobile {
+  display: none;
+}
+
+
+/***************************************************************/
+/****************** Media Queries ******************************/
+/***************************************************************/
+
+@media only screen and (max-width: 768px) {
+
+
+  section { padding: 10% 0;}      /* padding top and bottom target/context = 9px/90px = 10% */
+
+  .add-form-container { display: none;}
+
+  .add-form-container-mobile {
+      padding-top: 10%;        /* target/context = 9px/90px = 10% */
+      display: block;
+      width: 70%;              /* Here context is section of width 90px, so target/context = 63px/90px = 70% */
+      margin: 0 auto;
+  }
+
+  h2.event-h2 {
+  font-weight: 300;
+  font-size: 2em;
+  word-spacing: 2%;             /* expressed in %age of body font size: target/context = 3em/1.5em = 2% */
+  padding-bottom: 10%;          /* target/context = 9px/90px = 10% */
+  margin-left: 23.8958333333%; /* 768px is row width (context) ,so Target/Context = 183px/768px = 9.8958333333% */
+  width: auto;
+  padding-top: 2%;             /* target/context = 1.8px/90px = 2% */
+  letter-spacing: 1%;
+  }
+
+  label {
+      display: block;
+      color: #fff;
+      font-weight: 400;
+      margin-bottom: 1em;
+      font-size: 1.4em;
+  }
+
+  input[type=text],
+  input[type=email],
+  select,
+  textarea {
+  width: 100%;      /* width of form input = 100% to match with its context - add-form-container-mobile*/
+  padding: 2%;      /* target/context = 1.8px/90px = 2% */
+  margin-bottom: 10%; /* target/context = 9px/90px = 10% */
+  border-radius: 3%;  /* to make the borders rounded */
+  border: 1px solid #ccc;
+}
+
+
+input[type=date],
+input[type=file] {
+  width: 100%;   /* width of form input = 100% to match with its context - add-form-container-mobile*/
+  padding: 2%;   /* target/context = 1.8px/90px = 2% */
+  margin-bottom: 10%; /* target/context = 9px/90px = 10% */
+  border-radius: 3%; /* to make the borders rounded */
+  border: 1px solid #ccc;
+}
+
+
+textarea {
+  height: 20%;
+}
+
+.add-form-mobile {
+  padding-top: 3%; /* target/context = 2.7px/90px = 3% */
+  width: 100%;     /* width of form input = 100% to match with its context - add-form-container-mobile*/
+  margin: 0 auto;
+}
+
+
+  nav .navbar-nav li {
+    padding-top: 2%; /* target/context = 1.8px/90px = 2% */
+    }
+
+}
